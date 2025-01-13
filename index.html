@@ -128,6 +128,14 @@ var latlngs = [
 ];
 
 var polyline = L.polyline(latlngs, {color: 'purple', opacity: '0.7', weight: '3' });
+
+var latlngsCamp2 = [
+    [-70.94536, -53.39355],
+    [-71.60135, -61.56738],
+    [-73.08663, -63.67676],
+];
+
+var polylineCamp2 = L.polyline(latlngsCamp2, {color: 'red', opacity: '0.7', weight: '3' });
     
     
 // State Polygons
@@ -1156,7 +1164,15 @@ var ex_221 = L.marker ([-44.668653, -51.240234], {icon: up}).bindPopup("<h1>Sess
     
 var ex_222 = L.marker ([-42.924252, -50.603027], {icon: up}).bindPopup("<h1>Session 41</h1><h2><em>in the Feywild...</em></h2><p>Finding Si'Nelci, a city made of bone, Dead End had a few teeth extracted to pay for interesting fey items. Though they prodded their way into the home of an Arch-fey known as the 'Tooth Fairy'.</p><h1>Session 42</h1><h2><em>In the Feywild...</em></h2><p>The Tooth Fairy proved a worthy ally as she has lost her kingdom to the hags that ruled over Si'Nelci. Aiding her, Dead End stole a guards armor and stormed the castle, fighting off the three hags and the dwarf that they had taken control over. But not before a vampire paid a visit, the father of a member of Dead End.</p>") ;    
     
-var ex_223 = L.marker ([-29.954935, -56.162109], {icon: here}).bindPopup("<h1>Session 41 cont.</h1><p>Dead End teleported back to relative saftey within the walls of their home of Altash. They recounted their short Fey adventure to many and made plans to eliminate the vampire, Cardinal Crane, in order to aid the 'war' effort against the Ekdraldian Nation of Cities.</p>") ;     
+var ex_223 = L.marker ([-29.954935, -56.162109], {icon: here}).bindPopup("<h1>Session 41 cont.</h1><p>Dead End teleported back to relative saftey within the walls of their home of Altash. They recounted their short Fey adventure to many and made plans to eliminate the vampire, Cardinal Crane, in order to aid the 'war' effort against the Ekdraldian Nation of Cities.</p>") ;   
+
+// Campaign 2 markers
+
+var ex_224 = L.marker ([-70.94536, -53.39355], {icon: downleft}).bindPopup("<h1>Session 1</h1><p>Beginning in the trade city of Easthaven, the unnamed group of adventurers recieved a contract to deliver four heavy crates to the capital city of the Ekdraldian Nation of Cities, Whitebridge. The group traveled West into the Wreathing Woods.</p>") ; 
+
+var ex_225 = L.marker ([-71.60135, -61.56738], {icon: downleft}).bindPopup("<h1>Session 2</h1><p>Continuing towards Whitebridge, the group discovered an old religious site, dedicated to Dizzirun, The Great Brain. After delving into an old sacrifical area, the group found an old Tortle, Kokee, who they took under their wing.</p>") ; 
+
+var ex_226 = L.marker ([-73.08663, -63.67676], {icon: here}).bindPopup("<h1>Session 3</h1><p>Eventually entering Whitebridge, the group attempted to drop off their cargo, though the Bank Overseer of Whitebridge, Askhad Ashbrace, turned the cargo away and asked for the group to drop the contents at his estate late into the night. </br></br> Obliging, the group entered the Estate after the stars set, though after what seemed to be a smooth dropoff, Askhad erupted into a fireball, killing him and knocking over 75,000 gold pieces worth of fake coin onto the front lawn of the estate.</p>") ; 
    
 		//Marker Groups
 		
@@ -1169,7 +1185,9 @@ var ex_223 = L.marker ([-29.954935, -56.162109], {icon: here}).bindPopup("<h1>Se
     var mg_States = L.layerGroup([polygon, polygon2, polygon3, polygon4, polygon5]);
     
     var mg_camp = L.layerGroup([polylineFW, polyline, ex_200, ex_201, ex_202, ex_203, ex_204, ex_205, ex_206, ex_207, ex_208, ex_209, ex_211, ex_212, ex_213, ex_214, ex_215, ex_216, ex_217, ex_218, ex_219, ex_220, ex_221, ex_222, ex_223]);
-		
+
+    var mg_camp1 = L.layerGroup([polylineCamp2, ex_224, ex_225, ex_226]);
+	
 		//Marker Overlay
 	
     var overlays = {
@@ -1177,7 +1195,8 @@ var ex_223 = L.marker ([-29.954935, -56.162109], {icon: here}).bindPopup("<h1>Se
         "Regions" : mg_Regions,
 		"Ruins" : mg_Ruins,
         "States" : mg_States,
-		"C2: Dead End" : mg_camp, 
+		"C2: Dead End" : mg_camp,
+		"C3: No Name" : mg_camp1,
     };
 		
 	var overlays1 = {
