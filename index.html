@@ -133,6 +133,7 @@ var latlngsCamp2 = [
     [-70.94536, -53.39355],
     [-71.60135, -61.56738],
     [-73.08663, -63.67676],
+    [-72.29575, -59.47998],
 ];
 
 var polylineCamp2 = L.polyline(latlngsCamp2, {color: 'red', opacity: '0.7', weight: '3' });
@@ -1172,7 +1173,9 @@ var ex_224 = L.marker ([-70.94536, -53.39355], {icon: downleft}).bindPopup("<h1>
 
 var ex_225 = L.marker ([-71.60135, -61.56738], {icon: downleft}).bindPopup("<h1>Session 2</h1><p>Continuing towards Whitebridge, the group discovered an old religious site, dedicated to Dizzirun, The Great Brain. After delving into an old sacrificial area, the group found an old Tortle, Kokee, who they took under their wing.</p>") ; 
 
-var ex_226 = L.marker ([-73.08663, -63.67676], {icon: here}).bindPopup("<h1>Session 3</h1><p>Eventually entering Whitebridge, the group attempted to drop off their cargo, though the Bank Overseer of Whitebridge, Askhad Ashbrace, turned the cargo away and asked for the group to drop the contents at his estate late into the night. </br></br> Obliging, the group entered the Estate after the stars set, though after what seemed to be a smooth drop off, Askhad erupted into a fireball, killing him and knocking over 75,000 gold pieces worth of fake coin onto the front lawn of the estate.</p><h1>Session 4</h1><p>The unnamed group of adventurers defended the Askhad estate from assassins of Dark Elf (Drow) descent, eventually making their way inside with Askhad's late wife. Investigating Askhad's study revealed correspondence between the now dead Magocracy official and 'Kyvir,' an unknown individual, though it would seem a plot to disrupt the Ekdraldian economy is afoot.</p><h1>Session 5</h1><p>Being acquitted of <em>most</em> of the suspicion surrounding the murder of Askhad, the group turned over evidence to a Magocracy judge. Upon a closer inspection of Askhad's study, a hampster was discovered, seemingly able to read and write. After the night's events, some went to enjoy a drink while others broke into the Academy of War Casters' library, stealing a book on fleshwarping at the hampsters request. Meanwhile, one of the group members comitted murder in the backalley of a student of the same college.</p>") ; 
+var ex_226 = L.marker ([-73.08663, -63.67676], {icon: upright}).bindPopup("<h1>Session 3</h1><p>Eventually entering Whitebridge, the group attempted to drop off their cargo, though the Bank Overseer of Whitebridge, Askhad Ashbrace, turned the cargo away and asked for the group to drop the contents at his estate late into the night. </br></br> Obliging, the group entered the Estate after the stars set, though after what seemed to be a smooth drop off, Askhad erupted into a fireball, killing him and knocking over 75,000 gold pieces worth of fake coin onto the front lawn of the estate.</p><h1>Session 4</h1><p>The unnamed group of adventurers defended the Askhad estate from assassins of Dark Elf (Drow) descent, eventually making their way inside with Askhad's late wife. Investigating Askhad's study revealed correspondence between the now dead Magocracy official and 'Kyvir,' an unknown individual, though it would seem a plot to disrupt the Ekdraldian economy is afoot.</p><h1>Session 5</h1><p>Being acquitted of <em>most</em> of the suspicion surrounding the murder of Askhad, the group turned over evidence to a Magocracy judge. Upon a closer inspection of Askhad's study, a hampster was discovered, seemingly able to read and write. After the night's events, some went to enjoy a drink while others broke into the Academy of War Casters' library, stealing a book on fleshwarping at the hampsters request. Meanwhile, one of the group members comitted murder in the backalley of a student of the same college.</p>") ; 
+
+var ex_227 = L.marker ([-72.29575, -59.47998], {icon: here}).bindPopup("<h1>Session 6</h1><p>Late into the night, holed up in a dusty rented room, the group's newly found wizard-turned-hampster attempted a ritual, spawning a Yochlol (servitor of Lolth, the Spider Queen), who taunted the unnamed heroes but quickly dismissed itsself. <br>Sleeping off the misadventures and crimes from the previous day and early morning, the group made a stop at the Comb & Collar pet store before deciding to leave Whitebridge for Clewich, in search of an old family cabin. <br>As they passed through the Wreathing Woods, a well-traveled shapeshifter let the group sleep at her camp. While seeming mostly harmless despite the deception of appearance, the group invited her along on their journey.</p>") ; 
    
 		//Marker Groups
 		
@@ -1186,7 +1189,7 @@ var ex_226 = L.marker ([-73.08663, -63.67676], {icon: here}).bindPopup("<h1>Sess
     
     var mg_camp = L.layerGroup([polylineFW, polyline, ex_200, ex_201, ex_202, ex_203, ex_204, ex_205, ex_206, ex_207, ex_208, ex_209, ex_211, ex_212, ex_213, ex_214, ex_215, ex_216, ex_217, ex_218, ex_219, ex_220, ex_221, ex_222, ex_223]);
 
-    var mg_camp1 = L.layerGroup([polylineCamp2, ex_224, ex_225, ex_226]);
+    var mg_camp1 = L.layerGroup([polylineCamp2, ex_224, ex_225, ex_226, ex_227]);
 	
 		//Marker Overlay
 	
